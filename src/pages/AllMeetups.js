@@ -26,9 +26,7 @@ const AllMeetups = () => {
 		<section>
 			<h1>All Meetups</h1>
 
-			<ul>
-				<MeetupList meetups={DUMMY_DATA} />
-			</ul>
+			<MeetupList meetups={DUMMY_DATA} />
 		</section>
 	);
 };

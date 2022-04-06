@@ -1,13 +1,12 @@
 import { Route, Switch, Redirect } from "react-router-dom";
-import MainNavigation from "./components/layout/MainNavigation";
+import Layout from "./components/meetups/Layout";
 import AllMeetups from "./pages/AllMeetups";
 import Favorites from "./pages/Favorites";
 import NewMeetups from "./pages/NewMeetups";
 
 function App() {
 	return (
-		<div>
-			<MainNavigation />
+		<Layout>
 			<Switch>
 				<Route path={"/"} exact>
 					<AllMeetups />
@@ -25,7 +24,7 @@ function App() {
 					<Redirect to={"/"} />
 				</Route>
 			</Switch>
-		</div>
+		</Layout>
 	);
 }
 
