@@ -1,4 +1,4 @@
-import { Redirect, Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import MainNavigation from "./components/layout/MainNavigation";
 import AllMeetups from "./pages/AllMeetups";
 import Favorites from "./pages/Favorites";
@@ -19,6 +19,10 @@ function App() {
 
 				<Route path={"/favorites"}>
 					<Favorites />
+				</Route>
+
+				<Route path={"*"}>
+					<Redirect to={"/"} />
 				</Route>
 			</Switch>
 		</div>
