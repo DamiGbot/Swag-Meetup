@@ -1,3 +1,1 @@
-# React Meetup
-
----
+# Swag Meetup
